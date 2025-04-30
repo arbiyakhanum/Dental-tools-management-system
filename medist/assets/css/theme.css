@@ -67,7 +67,7 @@
     /* body */
     --body-font-color: #929292;
     --body-font-size: 14px;
-    --body-bgcolor: #f8f8f8;
+    --body-bgcolor: white;
     --body-font-family: 'Poppins', sans-serif;
     --body-font-weight: 400;
     --body-font-style: normal;
@@ -88,7 +88,7 @@
     --section-heading-font-line-height: 1.1;
 
     /* paragraph */
-    --paragraph-font-line-height: 25px; 
+    --paragraph-font-line-height: 25px;
 
     /* general color */
     --dominant-font-color: #00544f;
@@ -101,7 +101,7 @@
     --product-review-color: #ffa500;
 
     /* border */
-    --border-color: 226,226,226;
+    --border-color: 226, 226, 226;
     --border-opacity: 1;
     --border-radius: 0px;
 
@@ -111,6 +111,7 @@
     --box-shadow-inner: 51, 51, 51;
     --box-shadow-inner-opacity: 0.15;
 }
+
 /************************************* root end *************************************/
 
 /************************************* general start *************************************/
@@ -122,25 +123,31 @@
 .body-secondary-color {
     color: var(--body-font-color);
 }
+
 .dominant-link {
     color: var(--heading-font-color);
 }
+
 .body-dominant-color,
 .body-secondary-color,
 .dominant-link {
     -webkit-transition: color 0.5s ease-in-out;
     transition: color 0.5s ease-in-out;
 }
+
 .body-dominant-color:hover,
 .dominant-link:hover {
     color: var(--dominant-font-color);
 }
+
 .body-secondary-color:hover {
     color: var(--secondary-font-color);
 }
+
 .body-bg {
     background-color: var(--body-bgcolor);
 }
+
 .body-weight {
     font-weight: var(--body-font-weight);
 }
@@ -151,18 +158,23 @@
 .heading-color {
     color: var(--heading-font-color);
 }
+
 .heading-weight {
     font-weight: var(--heading-font-weight);
 }
+
 .section-heading-family {
     font-family: var(--section-heading-font-family);
 }
+
 .section-heading-text {
     text-transform: var(--section-heading-font-text);
 }
+
 .section-heading-weight {
     font-weight: var(--section-heading-font-weight);
 }
+
 .section-heading-lh {
     line-height: var(--section-heading-font-line-height);
 }
@@ -173,61 +185,78 @@
 .dominant-color {
     color: var(--dominant-font-color);
 }
+
 .dominant-bg {
     background-color: var(--dominant-font-color);
 }
+
 .secondary-color {
     color: var(--secondary-font-color);
 }
+
 .secondary-bg {
     background-color: var(--secondary-font-color);
 }
+
 .extra-color {
     color: var(--extra-font-color);
 }
+
 .extra-bg {
     background-color: var(--extra-bgcolor);
 }
+
 .dominant-btn {
     color: var(--dominant-font-color);
     background-color: var(--extra-font-color);
     border: 2px solid var(--extra-font-color);
 }
+
 .dominant-btn:hover {
     color: var(--extra-font-color);
     background-color: transparent;
     border-color: var(--extra-font-color);
 }
+
 .secondary-btn {
     color: var(--extra-font-color);
     background-color: var(--dominant-font-color);
     border: 2px solid var(--dominant-font-color);
 }
+
 .secondary-btn:hover {
     color: var(--extra-font-color);
     background-color: var(--secondary-font-color);
-    border-color: var(--secondary-font-color);    
+    border-color: var(--secondary-font-color);
 }
+
 .tertiary-btn {
     color: var(--extra-font-color);
     background-color: var(--secondary-font-color);
     border: 2px solid var(--secondary-font-color);
 }
+
 .quaternary-btn {
     color: var(--dominant-font-color);
     background-color: transparent;
     border: 2px solid var(--dominant-font-color);
 }
+
 .tertiary-btn:hover,
 .quaternary-btn:hover {
     color: var(--extra-font-color);
     background-color: var(--dominant-font-color);
     border-color: var(--dominant-font-color);
 }
-.dominant-btn, .secondary-btn, .tertiary-btn, .quaternary-btn {
-    -webkit-transition: color 0.5s ease-in-out,background-color 0.5s ease-in-out,border-color 0.5s ease-in-out;
-    transition: color 0.5s ease-in-out,background-color 0.5s ease-in-out,border-color 0.5s ease-in-out;
+
+.dominant-btn,
+.secondary-btn,
+.tertiary-btn,
+.quaternary-btn {
+    -webkit-transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, border-color 0.5s ease-in-out;
 }
+
 .link-btn {
     display: inline-block;
     color: var(--dominant-font-color);
@@ -236,24 +265,32 @@
     font-weight: var(--heading-font-weight);
     border-bottom: 1px solid;
 }
-.link-body-dominant, .link-body-secondary {
+
+.link-body-dominant,
+.link-body-secondary {
     color: var(--body-font-color);
 }
+
 .link-dominant-color {
     color: var(--heading-font-color);
 }
-.link-body-dominant, .link-body-secondary, .link-dominant-color {
+
+.link-body-dominant,
+.link-body-secondary,
+.link-dominant-color {
     display: inline-block;
     text-transform: uppercase;
     font-weight: var(--heading-font-weight);
     border-bottom: 1px solid;
-    -webkit-transition: color 0.5s ease-in-out,border-color 0.5s ease-in-out;
-    transition: color 0.5s ease-in-out,border-color 0.5s ease-in-out;
+    -webkit-transition: color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out, border-color 0.5s ease-in-out;
 }
+
 .link-body-dominant:hover,
 .link-dominant-color:hover {
     color: var(--dominant-font-color);
 }
+
 .link-body-secondary:hover {
     color: var(--secondary-font-color);
 }
@@ -264,9 +301,11 @@
 .review-color {
     color: var(--product-review-color);
 }
+
 .review-bg {
     background-color: var(--product-review-color);
 }
+
 /************************************* general end *************************************/
 
 /************************************* 'html', 'body', 'h1 to h6' start *************************************/
@@ -283,23 +322,31 @@ html {
 html {
     background-color: var(--html-bgcolor);
     scroll-behavior: smooth;
+
+
 }
+
 @media (min-width: 1200px) {
     html {
-        max-width: calc(100% - 30px);
-        margin: 0px auto;
+        width: 100% !important;
+        /* margin: 0px auto; */
+
     }
 }
+
 @media (min-width: 1400px) {
     html {
-        max-width: calc(100% - 60px);
+        width: 100% !important;
     }
 }
+
 @media (min-width: 1600px) {
     html {
-        max-width: calc(100% - 200px);
+        width: 100% !important;
     }
 }
+
+
 
 /*=====================================
     body css
@@ -319,7 +366,12 @@ body {
 /*=====================================
     heading css
 =====================================*/
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--heading-font-color);
     margin: 0;
     padding: 0;
@@ -328,6 +380,7 @@ h1, h2, h3, h4, h5, h6 {
     font-style: var(--heading-font-style);
     line-height: normal;
 }
+
 /************************************* 'html', 'body', 'h1 to h6' end *************************************/
 
 /************************************* section start *************************************/
@@ -337,12 +390,15 @@ h1, h2, h3, h4, h5, h6 {
 .section-capture {
     margin-bottom: 30px;
 }
+
 .section-capture span.sub-title {
     font-size: 16px;
 }
+
 .section-capture span.sub-title b {
     border-bottom: 1px solid;
 }
+
 @media (min-width: 1200px) {
     .section-capture {
         margin-bottom: 80px;
@@ -361,6 +417,7 @@ h1, h2, h3, h4, h5, h6 {
     font-style: var(--section-heading-font-style);
     line-height: var(--section-heading-font-line-height);
 }
+
 @media (min-width: 1200px) {
     .section-heading {
         font-size: 40px;
@@ -374,20 +431,25 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
 .section-pt {
     padding-top: 50px;
 }
+
 .section-pb {
     padding-bottom: 50px;
 }
+
 @media (min-width: 1200px) {
     .section-ptb {
         padding-top: 100px;
         padding-bottom: 100px;
     }
+
     .section-pt {
         padding-top: 100px;
     }
+
     .section-pb {
         padding-bottom: 100px;
     }
@@ -401,6 +463,7 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
     background-position: center center;
 }
+
 /************************************* section end *************************************/
 
 /************************************* 'p' start *************************************/
@@ -411,11 +474,15 @@ p {
     margin: 0;
     line-height: var(--paragraph-font-line-height);
 }
-.p-mtm20, .p-mtm30 {
+
+.p-mtm20,
+.p-mtm30 {
     display: flex;
     flex-wrap: wrap;
 }
-.p-mtm20>*, .p-mtm30>* {
+
+.p-mtm20>*,
+.p-mtm30>* {
     width: 100%;
 }
 
@@ -425,6 +492,7 @@ p {
 .p-mtm20 {
     margin-top: -5px;
 }
+
 .p-mtm20>* {
     margin-top: 5px;
 }
@@ -435,6 +503,7 @@ p {
 .p-mtm30 {
     margin-top: -15px;
 }
+
 .p-mtm30>* {
     margin-top: 15px;
 }
@@ -446,6 +515,7 @@ p {
     position: relative;
     padding-left: 17px;
 }
+
 .p-bullets::before {
     content: "\f3c1";
     font-family: remixicon;
@@ -455,6 +525,7 @@ p {
     left: 0;
     font-weight: var(--heading-font-weight);
 }
+
 /************************************* 'p' end *************************************/
 
 /************************************* 'container', 'container-fluid', 'container-mlr' start *************************************/
@@ -465,6 +536,7 @@ p {
     padding-left: 15px;
     padding-right: 15px;
 }
+
 @media (min-width: 1600px) {
     .container {
         max-width: 1380px;
@@ -478,6 +550,7 @@ p {
     padding-left: 15px;
     padding-right: 15px;
 }
+
 @media (min-width: 1600px) {
     .container-fluid {
         padding-left: 30px;
@@ -493,11 +566,13 @@ p {
         margin: 0px -15px;
     }
 }
+
 @media (min-width: 1400px) {
     .container-mlr {
         margin: 0px -30px;
     }
 }
+
 /************************************* 'container', 'container-fluid' end *************************************/
 
 /************************************* 'row' start *************************************/
@@ -508,15 +583,18 @@ p {
     margin-left: -7.5px;
     margin-right: -7.5px;
 }
+
 .row>* {
     padding-left: 7.5px;
     padding-right: 7.5px;
 }
+
 @media (min-width: 576px) {
     .row {
         margin-left: -15px;
         margin-right: -15px;
     }
+
     .row>* {
         padding-left: 15px;
         padding-right: 15px;
@@ -529,6 +607,7 @@ p {
 .row-mtm15 {
     margin-top: -15px;
 }
+
 .row-mtm15>* {
     margin-top: 15px;
 }
@@ -539,6 +618,7 @@ p {
 .row-mtm20 {
     margin-top: -9px;
 }
+
 .row-mtm20>* {
     margin-top: 9px;
 }
@@ -549,6 +629,7 @@ p {
 .row-pmtm20 {
     margin-top: -9px;
 }
+
 .row-pmtm20>* {
     margin-top: 9px;
 }
@@ -559,6 +640,7 @@ p {
 .row-mtm {
     margin-top: -30px;
 }
+
 .row-mtm>* {
     margin-top: 30px;
 }
@@ -569,13 +651,16 @@ p {
 .row-mtm30 {
     margin-top: -15px;
 }
+
 .row-mtm30>* {
     margin-top: 15px;
 }
+
 @media (min-width: 576px) {
     .row-mtm30 {
         margin-top: -30px;
     }
+
     .row-mtm30>* {
         margin-top: 30px;
     }
@@ -587,13 +672,16 @@ p {
 .row-mtm50 {
     margin-top: -30px;
 }
+
 .row-mtm50>* {
     margin-top: 30px;
 }
+
 @media (min-width: 1200px) {
     .row-mtm50 {
         margin-top: -50px;
     }
+
     .row-mtm50>* {
         margin-top: 50px;
     }
@@ -605,17 +693,21 @@ p {
 .row-mtm100 {
     margin-top: -50px;
 }
+
 .row-mtm100>* {
     margin-top: 50px;
 }
+
 @media (min-width: 1200px) {
     .row-mtm100 {
         margin-top: -100px;
     }
+
     .row-mtm100>* {
         margin-top: 100px;
     }
 }
+
 /************************************* 'row' end *************************************/
 
 /************************************* 'a' start *************************************/
@@ -626,10 +718,15 @@ a {
     color: var(--heading-font-color);
     text-decoration: none;
 }
-a:focus, .page-link:focus, .active>.page-link, .page-link.active {
+
+a:focus,
+.page-link:focus,
+.active>.page-link,
+.page-link.active {
     outline: none;
     box-shadow: none;
 }
+
 /************************************* 'a' end *************************************/
 
 /************************************* button start *************************************/
@@ -643,11 +740,16 @@ button {
     font-family: var(--body-font-family);
     border: none;
 }
-button, button:focus {
+
+button,
+button:focus {
     outline: none;
     box-shadow: none;
 }
-.btn:focus, .btn:active:focus, .btn.active:focus {
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
     outline: none;
     box-shadow: none;
 }
@@ -658,6 +760,7 @@ button, button:focus {
 .btn-row {
     margin-top: -15px;
 }
+
 .btn-row>* {
     margin-top: 15px;
 }
@@ -670,6 +773,7 @@ button, button:focus {
     margin-left: -7.5px;
     margin-right: -7.5px;
 }
+
 .btn-row15>* {
     margin-top: 15px;
     padding-left: 7.5px;
@@ -688,6 +792,7 @@ button, button:focus {
     font-weight: var(--heading-font-weight);
     border-radius: var(--border-radius);
 }
+
 @media (min-width: 576px) {
     .btn-style {
         padding: 13px 30px;
@@ -712,10 +817,12 @@ button, button:focus {
 /*====================================
     disabled css
 ====================================*/
-button.disabled, a.disabled {
+button.disabled,
+a.disabled {
     pointer-events: none;
     opacity: 0.5;
 }
+
 /************************************* button end *************************************/
 
 /************************************* ul start *************************************/
@@ -727,27 +834,56 @@ ul {
     margin: 0;
     padding: 0;
 }
-.ul-row, .ul-mt5, .ul-mt10, .ul-mt15, .ul-mtm15, .ul-mtm-15, .ul-mtm20, .ul-mt30, .ul-mtm30, .ul-ft {
+
+.ul-row,
+.ul-mt5,
+.ul-mt10,
+.ul-mt15,
+.ul-mtm15,
+.ul-mtm-15,
+.ul-mtm20,
+.ul-mt30,
+.ul-mtm30,
+.ul-ft {
     display: flex;
     flex-wrap: wrap;
 }
-.ul-mtm-15>*, .ul-mtm20>*, .ul-mtm30>*, .ul-ft>* {
+
+.ul-mtm-15>*,
+.ul-mtm20>*,
+.ul-mtm30>*,
+.ul-ft>* {
     width: 100%;
 }
-.ul-row, .ul-mt15, .ul-mtm15, .ul-mt30 {
+
+.ul-row,
+.ul-mt15,
+.ul-mtm15,
+.ul-mt30 {
     margin-left: -7.5px;
     margin-right: -7.5px;
 }
-.ul-row>*, .ul-mt15>*, .ul-mtm15>*, .ul-mt30>* {
+
+.ul-row>*,
+.ul-mt15>*,
+.ul-mtm15>*,
+.ul-mt30>* {
     padding-left: 7.5px;
     padding-right: 7.5px;
 }
+
 @media (min-width: 576px) {
-    .ul-row, .ul-mtm15, .ul-mt30 {
+
+    .ul-row,
+    .ul-mtm15,
+    .ul-mt30 {
         margin-left: -15px;
         margin-right: -15px;
     }
-    .ul-row>*, .ul-mtm15>*, .ul-mt30>* {
+
+    .ul-row>*,
+    .ul-mtm15>*,
+    .ul-mt30>* {
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -761,6 +897,7 @@ ul {
     margin-left: -2.5px;
     margin-right: -2.5px;
 }
+
 .ul-mt5>* {
     margin-top: 5px;
     padding-left: 2.5px;
@@ -775,6 +912,7 @@ ul {
     margin-left: -5px;
     margin-right: -5px;
 }
+
 .ul-mt10>* {
     margin-top: 10px;
     padding-left: 5px;
@@ -784,10 +922,13 @@ ul {
 /*=====================================
     'ul-row', 'ul-mt15' css
 =====================================*/
-.ul-row, .ul-mt15 {
+.ul-row,
+.ul-mt15 {
     margin-top: -15px;
 }
-.ul-row>*, .ul-mt15>* {
+
+.ul-row>*,
+.ul-mt15>* {
     margin-top: 15px;
 }
 
@@ -797,6 +938,7 @@ ul {
 .ul-mtm15 {
     margin-top: -4px;
 }
+
 .ul-mtm15>* {
     margin-top: 4px;
 }
@@ -807,6 +949,7 @@ ul {
 .ul-mtm-15 {
     margin-top: -4px;
 }
+
 .ul-mtm-15>* {
     margin-top: 4px;
 }
@@ -817,6 +960,7 @@ ul {
 .ul-mtm20 {
     margin-top: -9px;
 }
+
 .ul-mtm20>* {
     margin-top: 9px;
 }
@@ -827,13 +971,16 @@ ul {
 .ul-mt30 {
     margin-top: -15px;
 }
+
 .ul-mt30>* {
     margin-top: 15px;
 }
+
 @media (min-width: 576px) {
     .ul-mt30 {
         margin-top: -30px;
     }
+
     .ul-mt30>* {
         margin-top: 30px;
     }
@@ -845,6 +992,7 @@ ul {
 .ul-mtm30 {
     margin-top: -19px;
 }
+
 .ul-mtm30>* {
     margin-top: 19px;
 }
@@ -855,30 +1003,39 @@ ul {
 .ul-ft {
     margin-top: -10px;
 }
+
 .ul-ft>* {
     margin-top: 10px;
 }
+
 /************************************* ul end *************************************/
 
 /************************************* input, select, textarea start *************************************/
 /*=====================================
     'input', 'select', 'textarea' tag css
 =====================================*/
-input, select, textarea {
+input,
+select,
+textarea {
     color: var(--body-font-color);
     font-size: var(--body-font-size);
     background-color: var(--extra-bgcolor);
     font-family: var(--body-font-family);
     font-weight: var(--body-font-weight);
-    border: 1px solid rgba(var(--border-color),var(--border-opacity));
+    border: 1px solid rgba(var(--border-color), var(--border-opacity));
     border-radius: var(--border-radius);
 }
-input, select {
+
+input,
+select {
     height: 50px;
 }
-input, textarea {
+
+input,
+textarea {
     padding: 10px 15px;
 }
+
 textarea {
     display: block;
 }
@@ -886,30 +1043,43 @@ textarea {
 /*=====================================
     placeholder css
 =====================================*/
-input::-webkit-input-placeholder, input::placeholder, textarea::-webkit-input-placeholder, textarea::placeholder {
+input::-webkit-input-placeholder,
+input::placeholder,
+textarea::-webkit-input-placeholder,
+textarea::placeholder {
     color: var(--body-font-color);
 }
 
 /*=====================================
     msg_error css
 =====================================*/
-input.msg_error, textarea.msg_error {
+input.msg_error,
+textarea.msg_error {
     color: var(--extra-font-color);
     --bs-bg-opacity: 0.5;
     --bs-danger-opacity: 0.5;
-    background-color: rgba(var(--bs-danger-rgb),var(--bs-bg-opacity));
+    background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity));
     border-color: rgba(var(--bs-danger-rgb), var(--bs-danger-opacity));
 }
-input.msg_error::-webkit-input-placeholder, input.msg_error::placeholder, textarea.msg_error::-webkit-input-placeholder, textarea.msg_error::placeholder {
+
+input.msg_error::-webkit-input-placeholder,
+input.msg_error::placeholder,
+textarea.msg_error::-webkit-input-placeholder,
+textarea.msg_error::placeholder {
     color: var(--extra-font-color);
 }
 
 /*=====================================
     focus css
 =====================================*/
-input:focus, input:active, select:focus, select:active, textarea:focus, textarea:active {
+input:focus,
+input:active,
+select:focus,
+select:active,
+textarea:focus,
+textarea:active {
     outline: none;
-    border-color: rgba(var(--border-color),var(--border-opacity));
+    border-color: rgba(var(--border-color), var(--border-opacity));
     box-shadow: none;
 }
 
@@ -921,7 +1091,7 @@ select {
     -webkit-appearance: none;
     appearance: none;
     --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
-    background-image: var(--bs-form-select-bg-img),var(--bs-form-select-bg-icon,none);
+    background-image: var(--bs-form-select-bg-img), var(--bs-form-select-bg-icon, none);
     background-repeat: no-repeat;
     background-position: right .75rem center;
     background-size: 16px 12px;
@@ -934,13 +1104,16 @@ select {
 .field-row {
     margin-top: -15px;
 }
+
 .field-row>* {
     margin-top: 15px;
 }
+
 @media (min-width: 576px) {
     .field-row {
         margin-top: -25px;
     }
+
     .field-row>* {
         margin-top: 25px;
     }
@@ -955,6 +1128,7 @@ select {
     border: 1px dashed var(--dominant-font-color);
     border-radius: var(--border-radius);
 }
+
 .field-row .field-col .field-attachment::after {
     content: "";
     position: absolute;
@@ -966,9 +1140,11 @@ select {
     opacity: 0.1;
     z-index: -1;
 }
+
 .field-row .field-col .field-attachment label {
     cursor: pointer;
 }
+
 .field-row .field-col .field-attachment .field-attached button {
     font-size: 12px;
     top: -4px;
@@ -976,6 +1152,7 @@ select {
     width: 16px;
     height: 16px;
 }
+
 .field-row .field-col .field-attachment .field-attached img {
     width: 88px;
 }
@@ -987,13 +1164,15 @@ select {
     display: block;
     margin: 0px 0px 9px 0px;
 }
+
 .field-row .field-col .field-pwd {
     height: 50px;
     padding: 10px 15px;
     background-color: var(--extra-bgcolor);
-    border: 1px solid rgba(var(--border-color),var(--border-opacity));
+    border: 1px solid rgba(var(--border-color), var(--border-opacity));
     border-radius: var(--border-radius);
 }
+
 /************************************* input, textarea, select end *************************************/
 
 /************************************* preloader css start *************************************/
@@ -1001,14 +1180,16 @@ select {
     preloader css
 ====================================*/
 .preloader {
-    -webkit-transition: opacity 0.15s ease-in-out,visibility 0.15s ease-in-out;
-    transition: opacity 0.15s ease-in-out,visibility 0.15s ease-in-out;
+    -webkit-transition: opacity 0.15s ease-in-out, visibility 0.15s ease-in-out;
+    transition: opacity 0.15s ease-in-out, visibility 0.15s ease-in-out;
 }
+
 body.is-loaded .preloader {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
 }
+
 /************************************* preloader css end *************************************/
 
 /************************************* header css start *************************************/
@@ -1019,22 +1200,25 @@ body.is-loaded .preloader {
     left: 0px;
     right: 0px;
 }
+
 @media (min-width: 1200px) {
     .main-header {
-        left: 15px;
-        right: 15px;
+        left: 0px;
+        right: 0px;
     }
 }
+
 @media (min-width: 1400px) {
     .main-header {
-        left: 30px;
-        right: 30px;
+        left: 0px;
+        right: 0px;
     }
 }
+
 @media (min-width: 1600px) {
     .main-header {
-        left: 100px;
-        right: 100px;
+        left: 0px;
+        right: 0px;
     }
 }
 
@@ -1044,6 +1228,7 @@ body.is-loaded .preloader {
 .main-header .header-top-area .header-top-first.header-border {
     position: relative;
 }
+
 .main-header .header-top-area .header-top-first.header-border::after {
     content: "";
     position: absolute;
@@ -1051,7 +1236,7 @@ body.is-loaded .preloader {
     right: 0;
     bottom: 0;
     height: 1px;
-    background-color: rgba(var(--border-color),var(--border-opacity));
+    background-color: rgba(var(--border-color), var(--border-opacity));
 }
 
 /*====================================
@@ -1063,6 +1248,7 @@ body.is-loaded .preloader {
     position: relative;
     z-index: 1;
 }
+
 .main-header .header-bottom-area .header-icon .header-icon-block ul.header-icon-element li.header-icon-wrap::after {
     content: "";
     position: absolute;
@@ -1074,9 +1260,11 @@ body.is-loaded .preloader {
     opacity: 0.2;
     z-index: -1;
 }
+
 .main-header .header-bottom-area .header-icon .header-icon-block ul.header-icon-element li.header-icon-wrap:first-child::after {
     display: none;
 }
+
 /************************************* header css end *************************************/
 
 /*====================================
@@ -1098,21 +1286,27 @@ body.is-loaded .preloader {
     -webkit-transition: color 0.5s ease-in-out;
     transition: color 0.5s ease-in-out;
 }
+
 .vegamenu-content:hover a.menu-link {
     color: var(--dominant-font-color);
 }
+
 .vegamenu-content .main-wrap {
     border-radius: 0px 0px var(--border-radius) var(--border-radius);
 }
+
 .vegamenu-content:hover .main-wrap.collapse:not(.show) {
     display: block;
 }
+
 .vegamenu-content .main-wrap ul.menu-ul li.menu-li {
-    border-top: 1px solid rgba(var(--border-color),var(--border-opacity));
+    border-top: 1px solid rgba(var(--border-color), var(--border-opacity));
 }
+
 .vegamenu-content .main-wrap ul.menu-ul li.menu-li:first-child {
     border: none;
 }
+
 /************************************* header-vegamenu css end *************************************/
 
 /************************************* header-menu css start *************************************/
@@ -1122,17 +1316,21 @@ body.is-loaded .preloader {
 .mainmenu-content {
     margin: 0px -15px;
 }
+
 .mainmenu-content .main-wrap ul.menu-ul li.menu-li a.menu-link {
     color: var(--extra-font-color);
     -webkit-transition: color 0.5s ease-in-out;
     transition: color 0.5s ease-in-out;
 }
+
 .mainmenu-content .main-wrap ul.menu-ul li.menu-li:hover a.menu-link {
     color: var(--extra-font-color);
 }
+
 .mainmenu-content .main-wrap ul.menu-ul li.menu-li a.menu-link span.menu-title {
     position: relative;
 }
+
 .mainmenu-content .main-wrap ul.menu-ul li.menu-li a.menu-link span.menu-title::after {
     content: "";
     position: absolute;
@@ -1146,12 +1344,15 @@ body.is-loaded .preloader {
     -webkit-transition: width 0.5s linear;
     transition: width 0.5s linear;
 }
+
 .mainmenu-content .main-wrap ul.menu-ul li.menu-li:hover a.menu-link span.menu-title::after {
     width: 100%;
 }
+
 .mainmenu-content .main-wrap ul.menu-ul li.menu-li .menu-dropdown {
     border-radius: 0px 0px var(--border-radius) var(--border-radius);
 }
+
 .mainmenu-content .main-wrap ul.menu-ul li.menu-li:hover .menu-dropdown.collapse:not(.show) {
     display: block;
 }
@@ -1162,36 +1363,44 @@ body.is-loaded .preloader {
 .mainmenu-content .main-wrap ul.menu-ul li.menu-li.menu-right {
     position: relative;
 }
+
 .mainmenu-content .main-wrap ul.menu-ul li.menu-li .menu-dropdown.menu-sub {
     min-width: 230px;
 }
+
 .mainmenu-content .main-wrap ul.menu-ul li.menu-li.menu-right .menu-dropdown.menu-sub {
     left: auto;
     right: 0;
 }
+
 .mainmenu-content .main-wrap ul.menu-ul li.menu-li .menu-dropdown.menu-sub ul.menudrop-ul li.menudrop-li .menu-sublink a {
     color: var(--body-font-color);
     -webkit-transition: color 0.5s ease-in-out;
     transition: color 0.5s ease-in-out;
 }
+
 .mainmenu-content .main-wrap ul.menu-ul li.menu-li .menu-dropdown.menu-sub ul.menudrop-ul li.menudrop-li:hover .menu-sublink a {
     color: var(--dominant-font-color);
 }
+
 .mainmenu-content .main-wrap ul.menu-ul li.menu-li .menu-dropdown.menu-sub ul.menudrop-ul li.menudrop-li .menusub-dropdown {
     top: 0;
     left: 100%;
     overflow-y: auto;
     border-radius: 0px var(--border-radius) var(--border-radius) 0px;
 }
+
 .mainmenu-content .main-wrap ul.menu-ul li.menu-li .menu-dropdown.menu-sub ul.menudrop-ul li.menudrop-li.menu-bottom .menusub-dropdown {
     top: auto;
     bottom: 0;
 }
+
 .mainmenu-content .main-wrap ul.menu-ul li.menu-li.menu-right .menu-dropdown.menu-sub ul.menudrop-ul li.menudrop-li .menusub-dropdown,
 .mainmenu-content .main-wrap ul.menu-ul li.menu-li .menu-dropdown.menu-sub ul.menudrop-ul li.menudrop-li.menu-right .menusub-dropdown {
     left: auto;
     right: 100%;
 }
+
 .mainmenu-content .main-wrap ul.menu-ul li.menu-li .menu-dropdown.menu-sub ul.menudrop-ul li.menudrop-li:hover .menusub-dropdown.collapse:not(.show) {
     display: block;
 }
@@ -1203,6 +1412,7 @@ body.is-loaded .preloader {
     column-count: 6;
     column-gap: 30px;
 }
+
 /************************************* header-menu css end *************************************/
 
 /************************************* footer css start *************************************/
@@ -1212,9 +1422,11 @@ body.is-loaded .preloader {
 .footer-area .footer-list .ft-list {
     margin-top: 11px;
 }
+
 .footer-area .footer-list .ft-list:first-child {
     margin: 0px;
 }
+
 @media (min-width: 768px) {
     .footer-area .footer-list .ft-list {
         margin: 0px;
@@ -1226,19 +1438,23 @@ body.is-loaded .preloader {
 ====================================*/
 .footer-area .footer-list .ft-list a.ft-title {
     padding-top: 11px;
-    border-top: 1px solid rgba(var(--border-color),var(--border-opacity));
+    border-top: 1px solid rgba(var(--border-color), var(--border-opacity));
 }
+
 .footer-area .footer-list .ft-list:only-child a.ft-title,
 .footer-area .footer-list .ft-list:first-child a.ft-title {
     padding: 0px;
     border: none;
 }
+
 .footer-area .footer-list .ft-list a.ft-title[aria-expanded="false"] {
     color: var(--heading-font-color);
 }
+
 .footer-area .footer-list .ft-list a.ft-title[aria-expanded="true"] {
     color: var(--dominant-font-color);
 }
+
 .footer-area .footer-list .ft-list a.ft-title[aria-expanded="true"] span.ftmenu-icon i::before {
     content: "\f1af";
 }
@@ -1260,10 +1476,12 @@ body.is-loaded .preloader {
     padding-top: 23px;
     margin-top: 23px;
 }
+
 .footer-area .footer-list .footer-contact .ftcontact-link ul.ftcontact-ul li.ftcontact-li:first-child {
     padding: 0px;
     margin: 0px;
 }
+
 .footer-area .footer-list .footer-contact .ftcontact-link ul.ftcontact-ul li.ftcontact-li::before {
     content: "";
     position: absolute;
@@ -1273,14 +1491,17 @@ body.is-loaded .preloader {
     height: 2px;
     background-color: var(--dominant-font-color);
 }
+
 .footer-area .footer-list .footer-contact .ftcontact-link ul.ftcontact-ul li.ftcontact-li:first-child::before {
     display: none;
 }
+
 @media (min-width: 768px) {
     .footer-area .footer-list .footer-contact .ftcontact-link.collapse:not(.show) {
         display: block;
     }
 }
+
 /************************************* footer css end *************************************/
 
 /************************************* mobile-menu css start *************************************/
@@ -1292,12 +1513,14 @@ body.is-loaded .preloader {
     width: 350px;
     max-width: 100%;
     overflow: hidden;
-    -webkit-transition: left 0.5s ease-in-out,visibility 0.5s ease-in-out;
-    transition: left 0.5s ease-in-out,visibility 0.5s ease-in-out;
+    -webkit-transition: left 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    transition: left 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
+
 .mobile-menu.active {
     left: 0px;
 }
+
 @media screen and (max-height: 600px) {
     .mobile-menu {
         overflow-y: auto;
@@ -1308,6 +1531,7 @@ body.is-loaded .preloader {
 .mobile-menu .mobile-contents {
     height: 100%;
 }
+
 @media screen and (max-height: 600px) {
     .mobile-menu .mobile-contents {
         height: auto;
@@ -1320,21 +1544,26 @@ body.is-loaded .preloader {
 .mobilemenu-content {
     overflow-y: auto;
 }
+
 .mobilemenu-content .main-wrap ul.menu-ul {
     margin-top: -1px;
 }
+
 .mobilemenu-content .main-wrap ul.menu-ul li.menu-li .menu-btn button,
 .mobilemenu-content .main-wrap ul.menu-ul li.menu-li .menu-btn button[aria-expanded="false"],
 .mobilemenu-content .main-wrap ul.menu-ul li.menu-li .menu-btn span a {
     color: var(--body-font-color);
 }
+
 .mobilemenu-content .main-wrap ul.menu-ul li.menu-li .menu-btn button[aria-expanded="true"],
-.mobilemenu-content .main-wrap ul.menu-ul li.menu-li .menu-btn button[aria-expanded="true"] + span a {
+.mobilemenu-content .main-wrap ul.menu-ul li.menu-li .menu-btn button[aria-expanded="true"]+span a {
     color: var(--dominant-font-color);
 }
+
 .mobilemenu-content .main-wrap ul.menu-ul li.menu-li .menu-btn button[aria-expanded="true"] i::before {
     content: "\f1af";
 }
+
 /************************************* mobile-menu css end *************************************/
 
 /************************************* search-modal css start *************************************/
@@ -1344,14 +1573,17 @@ body.is-loaded .preloader {
 .search-bar .search-results .search-for span::before {
     content: '"';
 }
+
 .search-bar .search-results .search-for span::after {
     content: '"';
 }
+
 .search-bar .search-results ul.search-ul {
     margin-top: -1px;
     max-height: 206px;
     overflow-y: auto;
 }
+
 /************************************* search-modal css end *************************************/
 
 /************************************* cart-drawer css start *************************************/
@@ -1363,12 +1595,14 @@ body.is-loaded .preloader {
     width: 450px;
     max-width: 100%;
     overflow: hidden;
-    -webkit-transition: right 0.5s ease-in-out,visibility 0.5s ease-in-out;
-    transition: right 0.5s ease-in-out,visibility 0.5s ease-in-out;
+    -webkit-transition: right 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    transition: right 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
+
 .cart-drawer.active {
     right: 0px;
 }
+
 @media screen and (max-height: 600px) {
     .cart-drawer {
         overflow-y: auto;
@@ -1381,6 +1615,7 @@ body.is-loaded .preloader {
 .cart-drawer form.drawer-contents {
     height: 100%;
 }
+
 @media screen and (max-height: 600px) {
     .cart-drawer form.drawer-contents {
         height: auto;
@@ -1400,6 +1635,7 @@ body.is-loaded .preloader {
 .cart-drawer form.drawer-contents .drawer-inner .drawer-footer .drawer-cart-checkout .drawer-cart-box {
     margin-top: -5px;
 }
+
 /************************************* cart-drawer css end *************************************/
 
 /************************************* bottom-menu css start *************************************/
@@ -1412,6 +1648,7 @@ body.is-loaded .preloader {
     height: 15px;
     line-height: 1.1;
 }
+
 /************************************* bottom-menu css end *************************************/
 
 /************************************* bg-screen css start *************************************/
@@ -1421,17 +1658,20 @@ body.is-loaded .preloader {
 .bg-screen .bg-back,
 .bg-screen .bg-shop,
 .without-shop-sidebar .bg-screen .bg-back {
-    -webkit-transition: opacity 0.5s ease-in-out,visibility 0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out,visibility 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
+
 @media (min-width: 1200px) {
     .bg-screen .bg-back {
         display: none;
     }
+
     .without-shop-sidebar .bg-screen .bg-back {
         display: block;
     }
 }
+
 /************************************* bg-screen css end *************************************/
 
 /************************************* back-to-top css start *************************************/
@@ -1441,19 +1681,22 @@ body.is-loaded .preloader {
 a#top {
     bottom: 60px;
     right: 15px;
-    -webkit-transition: color 0.5s ease-in-out,background-color 0.5s ease-in-out,opacity 0.5s ease-in-out,visibility 0.5s ease-in-out,border-color 0.5s ease-in-out;
-    transition: color 0.5s ease-in-out,background-color 0.5s ease-in-out,opacity 0.5s ease-in-out,visibility 0.5s ease-in-out,border-color 0.5s ease-in-out;
+    -webkit-transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out, border-color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out, border-color 0.5s ease-in-out;
 }
+
 @media (min-width: 576px) {
     a#top {
         right: 30px;
     }
 }
+
 @media (min-width: 1600px) {
     a#top {
         right: 100px;
     }
 }
+
 /************************************* back-to-top css end *************************************/
 
 /************************************* banner-hover css start *************************************/
@@ -1463,34 +1706,39 @@ a#top {
 .banner-hover .banner-img .banner-icon {
     color: var(--secondary-font-color);
     background-color: var(--extra-bgcolor);
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: opacity 0.5s ease-in-out,visibility 0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out,visibility 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
+
 .banner-hover .banner-img .banner-btn {
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: color 0.5s ease-in-out,background-color 0.5s ease-in-out,border-color 0.5s ease-in-out,opacity 0.5s ease-in-out,visibility 0.5s ease-in-out;
-    transition: color 0.5s ease-in-out,background-color 0.5s ease-in-out,border-color 0.5s ease-in-out,opacity 0.5s ease-in-out,visibility 0.5s ease-in-out;
+    -webkit-transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, border-color 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, border-color 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
+
 .banner-hover:hover .banner-img .banner-btn,
 .banner-hover:hover .banner-img .banner-icon {
     opacity: 1;
     visibility: visible;
 }
+
 .banner-hover .banner-img img {
-    -webkit-transition: transform 0.5s ease-in-out,filter 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out,filter 0.5s ease-in-out;
+    -webkit-transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
+
 .banner-hover:hover .banner-btn img,
 .banner-hover:hover .banner-img img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
-.banner-hover:hover .banner-img .banner-btn + img,
-.banner-hover:hover .banner-img .banner-icon + img {
+
+.banner-hover:hover .banner-img .banner-btn+img,
+.banner-hover:hover .banner-img .banner-icon+img {
     -webkit-filter: brightness(0.8);
     filter: brightness(0.8);
 }
@@ -1501,6 +1749,7 @@ a#top {
 .video .video-loader {
     display: none;
 }
+
 .video .video-loader::after {
     content: "";
     position: absolute;
@@ -1511,11 +1760,13 @@ a#top {
     background-color: var(--body-bgcolor);
     opacity: 0.8;
 }
+
 .video .video-loader span svg {
     width: 56px;
     -webkit-animation: rotator 1s linear infinite;
     animation: rotator 1s linear infinite;
 }
+
 .video .video-loader span svg circle {
     stroke-dashoffset: 0;
     stroke-dasharray: 280;
@@ -1523,15 +1774,18 @@ a#top {
     -webkit-animation: dash 1s ease-in-out infinite;
     animation: dash 1s ease-in-out infinite;
 }
+
 .video .video-img .banner-video-icon {
     color: var(--secondary-font-color);
     background-color: var(--extra-bgcolor);
 }
+
 .video .video-img img,
 .video .video-tag video {
     -webkit-filter: brightness(0.8);
     filter: brightness(0.8);
 }
+
 .video .video-img .banner-video-icon::after {
     content: '';
     position: absolute;
@@ -1545,15 +1799,19 @@ a#top {
     -webkit-animation: hoverEffect 2s linear infinite;
     animation: hoverEffect 2s linear infinite;
 }
+
 .video .video-frame {
     display: none;
 }
+
 .video .video-tag {
     display: none;
 }
+
 .video .video-tag video {
     object-fit: cover;
 }
+
 /************************************* banner-hover css start *************************************/
 
 /************************************* quantity css start *************************************/
@@ -1563,10 +1821,12 @@ a#top {
 .js-qty-wrapper {
     width: 120px;
 }
+
 .js-qty-wrapper .js-qty-wrap button.js-qty-adjust {
     width: 30px;
     height: 30px;
 }
+
 .js-qty-wrapper .js-qty-wrap input.js-qty-num {
     width: calc(100% - 60px);
     height: 30px;
@@ -1589,6 +1849,7 @@ a#top {
     -moz-appearance: number-input;
     appearance: number-input;
 }
+
 /************************************* quantity css end *************************************/
 
 /************************************* timer css start *************************************/
@@ -1598,6 +1859,7 @@ a#top {
 .timer-section .row>* {
     position: relative;
 }
+
 .timer-section .row>*::before {
     content: ":";
     font-size: 24px;
@@ -1606,9 +1868,11 @@ a#top {
     bottom: 50%;
     transform: translateY(50%);
 }
+
 .timer-section .row>*:first-child::before {
     display: none;
 }
+
 /************************************* timer css start *************************************/
 
 /************************************* add-to-cart css start *************************************/
@@ -1619,20 +1883,25 @@ a#top {
 .add-to-cart.done span.product-icon span.product-bag-icon {
     display: none;
 }
+
 .add-to-cart span.product-icon span.product-loader-icon {
     display: none;
     -webkit-animation: spin 1s linear infinite;
     animation: spin 1s linear infinite;
 }
+
 .add-to-cart.loading span.product-icon span.product-loader-icon {
     display: block;
 }
+
 .add-to-cart span.product-icon span.product-check-icon {
     display: none;
 }
+
 .add-to-cart.done span.product-icon span.product-check-icon {
     display: block;
 }
+
 /************************************* add-to-cart css end *************************************/
 
 /************************************* review-ratting css start *************************************/
@@ -1644,30 +1913,37 @@ span.review-ratting {
     flex-wrap: wrap;
     align-items: center;
 }
+
 span.review-ratting span.review-star {
     color: var(--product-review-color);
     display: flex;
     flex-wrap: wrap;
     line-height: 1;
 }
+
 span.review-ratting span.review-star i {
     margin: 0px 0px 0px 3px;
 }
+
 span.review-ratting span.review-star i:first-child {
     margin: 0;
 }
+
 span.review-ratting span.review-caption {
     display: none;
     font-size: 13px;
     margin-left: 5px;
     line-height: 1;
 }
+
 span.review-ratting span.review-caption::before {
     content: "(";
 }
+
 span.review-ratting span.review-caption::after {
     content: ")";
 }
+
 /************************************* review-ratting css end *************************************/
 
 /************************************* social-icon css start *************************************/
@@ -1677,54 +1953,70 @@ span.review-ratting span.review-caption::after {
 .behance {
     color: #3a67fa;
 }
+
 .bg-behance {
     background-color: #3a67fa;
 }
+
 .dribbble {
     color: #ea4c89;
 }
+
 .bg-dribbble {
     background-color: #ea4c89;
 }
+
 .facebook {
     color: #3b5998;
 }
+
 .bg-facebook {
     background-color: #3b5998;
 }
+
 .instagram {
-    background-image: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .bg-instagram {
-    background-image: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
+
 .linkedin {
     color: #0a66c2;
 }
+
 .bg-linkedin {
     background-color: #0a66c2;
 }
+
 .pinterest {
     color: #e60023;
 }
+
 .bg-pinterest {
     background-color: #e60023;
 }
+
 .twitter {
     color: #00acee;
 }
+
 .bg-twitter {
     background-color: #00acee;
 }
+
 .youtube {
     color: #cd201f;
 }
+
 .bg-youtube {
     background-color: #cd201f;
 }
+
 /************************************* social-icon css end *************************************/
 
 /************************************* custom-checkbox, radio, switch css start *************************************/
@@ -1738,6 +2030,7 @@ label.cust-checkbox-label {
     user-select: none;
     cursor: pointer;
 }
+
 label.cust-checkbox-label input.cust-checkbox {
     position: absolute;
     top: 0;
@@ -1747,6 +2040,7 @@ label.cust-checkbox-label input.cust-checkbox {
     opacity: 0;
     cursor: pointer;
 }
+
 label.cust-checkbox-label span.cust-check {
     float: left;
     position: relative;
@@ -1755,20 +2049,24 @@ label.cust-checkbox-label span.cust-check {
     height: 15px;
     background-color: var(--extra-bgcolor);
     margin: 0px 5px 0px 0px;
-    border: 1px solid rgba(var(--border-color),var(--border-opacity));
+    border: 1px solid rgba(var(--border-color), var(--border-opacity));
     border-radius: var(--border-radius);
 }
+
 .shop-sidebar label.cust-checkbox-label span.cust-check {
     position: unset;
 }
+
 label.cust-checkbox-label:hover span.cust-check,
-label.cust-checkbox-label input.cust-checkbox:checked ~ span.cust-check {
-    box-shadow: inset 0px 0px 5px rgba(var(--box-shadow-inner),var(--box-shadow-inner-opacity));
+label.cust-checkbox-label input.cust-checkbox:checked~span.cust-check {
+    box-shadow: inset 0px 0px 5px rgba(var(--box-shadow-inner), var(--box-shadow-inner-opacity));
 }
-label.cust-checkbox-label input.cust-checkbox:checked ~ span.cust-check {
+
+label.cust-checkbox-label input.cust-checkbox:checked~span.cust-check {
     background-color: var(--dominant-font-color);
     border-color: var(--dominant-font-color);
 }
+
 label.cust-checkbox-label span.cust-check::after {
     display: none;
     content: "\eb7a";
@@ -1776,7 +2074,8 @@ label.cust-checkbox-label span.cust-check::after {
     color: var(--extra-font-color);
     font-size: 13px;
 }
-label.cust-checkbox-label input.cust-checkbox:checked ~ span.cust-check::after {
+
+label.cust-checkbox-label input.cust-checkbox:checked~span.cust-check::after {
     display: block;
 }
 
@@ -1788,7 +2087,8 @@ label.cust-checkbox-label img {
     border: 1px solid transparent;
     border-radius: var(--border-radius);
 }
-label.cust-checkbox-label input.cust-checkbox:checked ~ img {
+
+label.cust-checkbox-label input.cust-checkbox:checked~img {
     border-color: var(--dominant-font-color);
 }
 
@@ -1802,6 +2102,7 @@ label.cust-radio-label {
     user-select: none;
     cursor: pointer;
 }
+
 label.cust-radio-label input {
     position: absolute;
     left: 0;
@@ -1810,6 +2111,7 @@ label.cust-radio-label input {
     opacity: 0;
     cursor: pointer;
 }
+
 label.cust-radio-label span.cust-check {
     float: left;
     position: relative;
@@ -1817,12 +2119,14 @@ label.cust-radio-label span.cust-check {
     height: 20px;
     background-color: var(--extra-bgcolor);
     margin: 0px 5px 0px 0px;
-    border: 1px solid rgba(var(--border-color),var(--border-opacity));
+    border: 1px solid rgba(var(--border-color), var(--border-opacity));
     border-radius: 50%;
 }
-label.cust-radio-label input:checked ~ span.cust-check {
+
+label.cust-radio-label input:checked~span.cust-check {
     border-color: var(--dominant-font-color);
 }
+
 label.cust-radio-label span.cust-check::after {
     display: none;
     content: "";
@@ -1835,9 +2139,11 @@ label.cust-radio-label span.cust-check::after {
     background-color: var(--dominant-font-color);
     border-radius: 50%;
 }
-label.cust-radio-label input:checked ~ span.cust-check::after {
+
+label.cust-radio-label input:checked~span.cust-check::after {
     display: block;
 }
+
 label.cust-radio-label span.cust-text span.cust-other-text {
     font-size: 12px;
 }
@@ -1850,6 +2156,7 @@ label.cust-switch-label {
     width: 30px;
     height: 10px;
 }
+
 label.cust-switch-label input {
     position: absolute;
     opacity: 0;
@@ -1857,6 +2164,7 @@ label.cust-switch-label input {
     height: 0;
     width: 0;
 }
+
 label.cust-switch-label span.cust-switch-slide {
     position: absolute;
     top: 0;
@@ -1868,14 +2176,16 @@ label.cust-switch-label span.cust-switch-slide {
     background-color: var(--extra-bgcolor);
     cursor: pointer;
     border-radius: 25px;
-    border: 1px solid rgba(var(--border-color),var(--border-opacity));
-    -webkit-transition: background-color 0.5s ease-in-out,border-color 0.5s ease-in-out;
-    transition: background-color 0.5s ease-in-out,border-color 0.5s ease-in-out;
+    border: 1px solid rgba(var(--border-color), var(--border-opacity));
+    -webkit-transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out;
 }
-label.cust-switch-label input:checked ~ span.cust-switch-slide {
+
+label.cust-switch-label input:checked~span.cust-switch-slide {
     background-color: var(--dominant-font-color);
     border-color: var(--extra-bgcolor);
 }
+
 label.cust-switch-label span.cust-switch-slide::before {
     content: "";
     position: absolute;
@@ -1886,14 +2196,16 @@ label.cust-switch-label span.cust-switch-slide::before {
     background-color: var(--dominant-font-color);
     border-radius: 25px;
     border: 1px solid var(--dominant-font-color);
-    -webkit-transition: background-color 0.5s ease-in-out,transform 0.5s ease-in-out,border-color 0.5s ease-in-out;
-    transition: background-color 0.5s ease-in-out,transform 0.5s ease-in-out,border-color 0.5s ease-in-out;
+    -webkit-transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out, border-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out, border-color 0.5s ease-in-out;
 }
-label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
+
+label.cust-switch-label input:checked~span.cust-switch-slide::before {
     background-color: var(--extra-bgcolor);
     transform: translateX(200%);
-    border-color: rgba(var(--border-color),var(--border-opacity));
+    border-color: rgba(var(--border-color), var(--border-opacity));
 }
+
 /************************************* custom-checkbox, radio, switch css end *************************************/
 
 /************************************* pagination css start *************************************/
@@ -1906,10 +2218,12 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
     -webkit-transition: color 0.5s ease-in-out;
     transition: color 0.5s ease-in-out;
 }
+
 .paginatoin-area ul.pagination-box li.page-item a.page-link:not(.icon-16) {
     font-size: var(--body-font-size);
 }
-.paginatoin-area ul.pagination-box li.page-item:not(.first,.last) a.page-link {
+
+.paginatoin-area ul.pagination-box li.page-item:not(.first, .last) a.page-link {
     width: 30px;
     height: 30px;
 }
@@ -1918,6 +2232,7 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
 .paginatoin-area ul.pagination-box li.page-item a.page-link:hover {
     color: var(--dominant-font-color);
 }
+
 .paginatoin-area ul.pagination-box li.page-item a.page-link.active {
     color: var(--extra-font-color);
     background-color: var(--dominant-font-color);
@@ -1927,6 +2242,7 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
 .paginatoin-area ul.pagination-box li.page-item.disabled a.page-link {
     opacity: 0.5;
 }
+
 /************************************* pagination css end *************************************/
 
 /************************************* magnific-popup css start *************************************/
@@ -1939,23 +2255,28 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
     -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
 }
+
 .mfp-with-zoom.mfp-ready .mfp-container {
     opacity: 1;
 }
+
 .mfp-with-zoom.mfp-ready.mfp-bg {
     opacity: 0.95;
 }
+
 .mfp-with-zoom.mfp-removing .mfp-container,
 .mfp-with-zoom.mfp-removing.mfp-bg {
     opacity: 0;
 }
+
 .mfp-container.mfp-iframe-holder {
     width: auto;
     left: 15px;
     right: 15px;
 }
+
 .mfp-iframe-holder .mfp-close {
-    display: block!important;
+    display: block !important;
     font-size: 16px;
     padding: 0;
     height: auto;
@@ -1963,27 +2284,32 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
     position: absolute;
     top: -20px;
     right: 0;
-    background-color: transparent!important;
+    background-color: transparent !important;
     line-height: 1;
 }
+
 .mfp-iframe-scaler iframe {
     border: none;
     border-radius: var(--border-radius);
 }
+
 /************************************* magnific-popup css end *************************************/
 
 /************************************* slider-swiper css start *************************************/
 /*====================================
     product slider-swiper css
 ====================================*/
+
 .collection-wrap .swiper:not(.swiper-initialized) .swiper-slide:not([style]) {
     width: 50%;
 }
+
 @media (min-width: 768px) {
-    .collection-wrap .swiper:not(.swiper-initialized) .swiper-slide:not([style]) {
+    .collection-wrap .swiper:not(.swiper-initialized) .:not([style]) {
         width: 33.33%;
     }
 }
+
 @media (min-width: 1200px) {
     .collection-wrap .swiper:not(.swiper-initialized) .swiper-slide:not([style]) {
         width: 25%;
@@ -1996,16 +2322,19 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
 .blog-wrap .swiper:not(.swiper-initialized) .swiper-slide:not([style]) {
     width: 100%;
 }
+
 @media (min-width: 768px) {
     .blog-wrap .swiper:not(.swiper-initialized) .swiper-slide:not([style]) {
         width: 50%;
     }
 }
+
 @media (min-width: 992px) {
     .blog-wrap .swiper:not(.swiper-initialized) .swiper-slide:not([style]) {
         width: 33.33%;
     }
 }
+
 /************************************* slider-swiper css end *************************************/
 
 /************************************* slider-arrow css start *************************************/
@@ -2018,6 +2347,7 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
 .blog-wrap {
     position: relative;
 }
+
 .shop-cat-wrap .swiper-buttons,
 .cat-wrap .swiper-buttons,
 .collection-wrap .swiper-buttons,
@@ -2027,13 +2357,16 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
     text-align: center;
     line-height: 0;
 }
+
 .shop-cat-wrap .swiper-buttons .swiper-buttons-wrap,
 .cat-wrap .swiper-buttons .swiper-buttons-wrap,
 .collection-wrap .swiper-buttons .swiper-buttons-wrap,
 .blog-wrap .swiper-buttons .swiper-buttons-wrap {
     display: inline-flex;
 }
+
 @media (min-width: 1200px) {
+
     .shop-cat-wrap .swiper-buttons,
     .cat-wrap .swiper-buttons,
     .collection-wrap .swiper-buttons,
@@ -2053,18 +2386,20 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
     height: 40px;
     background-color: var(--body-bgcolor);
     margin-right: 10px;
-    border: 1px solid rgba(var(--border-color),var(--border-opacity));
+    border: 1px solid rgba(var(--border-color), var(--border-opacity));
     border-radius: 100%;
-    box-shadow: rgba(var(--box-shadow-outer),var(--box-shadow-outer-opacity));
-    -webkit-transition: color 0.5s ease-in-out,background-color 0.5s ease-in-out,border-color 0.5s ease-in-out;
-    transition: color 0.5s ease-in-out,background-color 0.5s ease-in-out,border-color 0.5s ease-in-out;
+    box-shadow: rgba(var(--box-shadow-outer), var(--box-shadow-outer-opacity));
+    -webkit-transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, border-color 0.5s ease-in-out;
 }
+
 .shop-cat-wrap .swiper-buttons button:last-child,
 .cat-wrap .swiper-buttons button:last-child,
 .collection-wrap .swiper-buttons button:last-child,
 .blog-wrap .swiper-buttons button:last-child:last-child {
     margin: 0px;
 }
+
 .shop-cat-wrap .swiper-buttons button:hover,
 .cat-wrap .swiper-buttons button:hover,
 .collection-wrap .swiper-buttons button:hover,
@@ -2073,6 +2408,7 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
     background-color: var(--dominant-font-color);
     border-color: var(--dominant-font-color);
 }
+
 /************************************* slider-arrow css end *************************************/
 
 /************************************* slider-dot css start *************************************/
@@ -2087,7 +2423,9 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
     margin-top: 30px;
     line-height: 0;
 }
+
 @media (min-width: 1200px) {
+
     .shop-cat-wrap .swiper-dots,
     .cat-wrap .swiper-dots,
     .collection-wrap .swiper-dots,
@@ -2108,6 +2446,7 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
     justify-content: center;
     margin: -5px 0px 0px -5px;
 }
+
 .shop-cat-wrap .swiper-dots .swiper-pagination span,
 .cat-wrap .swiper-dots .swiper-pagination span,
 .collection-wrap .swiper-dots .swiper-pagination span,
@@ -2119,6 +2458,7 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
     opacity: 1;
     border: 1px solid var(--dominant-font-color);
 }
+
 .shop-cat-wrap .swiper-dots .swiper-pagination span.swiper-pagination-bullet-active,
 .cat-wrap .swiper-dots .swiper-pagination span.swiper-pagination-bullet-active,
 .collection-wrap .swiper-dots .swiper-pagination span.swiper-pagination-bullet-active,
@@ -2126,6 +2466,7 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
     background-color: var(--dominant-font-color);
     border-color: var(--dominant-font-color);
 }
+
 /************************************* slider-dot css end *************************************/
 
 /************************************* view-button css start *************************************/
@@ -2136,11 +2477,13 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
     margin-top: 30px;
     text-align: center;
 }
+
 @media (min-width: 1200px) {
     .view-button {
         margin-top: 80px;
     }
 }
+
 /************************************* view-button css end *************************************/
 
 /************************************* slider-scroll css end *************************************/
@@ -2150,11 +2493,13 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
 .swiper-scroll {
     margin-top: 30px;
 }
+
 @media (min-width: 1200px) {
     .swiper-scroll {
         margin-top: 80px;
     }
 }
+
 /************************************* slider-scroll css end *************************************/
 
 /************************************* scrollbar css start *************************************/
@@ -2170,6 +2515,7 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
     -webkit-scrollbar-width: thin;
     scrollbar-width: thin;
 }
+
 .mainmenu-content .main-wrap ul.menu-ul li.menu-li .menu-dropdown.menu-sub ul.menudrop-ul li.menudrop-li .menusub-dropdown::-webkit-scrollbar,
 .mobile-menu .mobilemenu-content::-webkit-scrollbar,
 .cart-drawer form.drawer-contents .drawer-inner .drawer-scrollable::-webkit-scrollbar,
@@ -2178,6 +2524,7 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
 .tce-area .ck.ck-editor__editable_inline::-webkit-scrollbar {
     width: 2px;
 }
+
 .mainmenu-content .main-wrap ul.menu-ul li.menu-li .menu-dropdown.menu-sub ul.menudrop-ul li.menudrop-li .menusub-dropdown::-webkit-scrollbar-track,
 .mobile-menu .mobilemenu-content::-webkit-scrollbar-track,
 .cart-drawer form.drawer-contents .drawer-inner .drawer-scrollable::-webkit-scrollbar-track,
@@ -2186,6 +2533,7 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
 .tce-area .ck.ck-editor__editable_inline::-webkit-scrollbar-track {
     background-color: #eeeeee;
 }
+
 .mainmenu-content .main-wrap ul.menu-ul li.menu-li .menu-dropdown.menu-sub ul.menudrop-ul li.menudrop-li .menusub-dropdown::-webkit-scrollbar-thumb,
 .mobile-menu .mobilemenu-content::-webkit-scrollbar-thumb,
 .cart-drawer form.drawer-contents .drawer-inner .drawer-scrollable::-webkit-scrollbar-thumb,
@@ -2194,6 +2542,7 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
 .tce-area .ck.ck-editor__editable_inline::-webkit-scrollbar-thumb {
     background-color: #c1c1c1;
 }
+
 .mainmenu-content .main-wrap ul.menu-ul li.menu-li .menu-dropdown.menu-sub ul.menudrop-ul li.menudrop-li .menusub-dropdown::-webkit-scrollbar-thumb:hover,
 .mobile-menu .mobilemenu-content::-webkit-scrollbar-thumb:hover,
 .cart-drawer form.drawer-contents .drawer-inner .drawer-scrollable::-webkit-scrollbar-thumb:hover,
@@ -2202,47 +2551,59 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
 .tce-area .ck.ck-editor__editable_inline::-webkit-scrollbar-thumb:hover {
     background-color: var(--dominant-font-color);
 }
+
 @media (min-width: 768px) {
     .quickview-modal .quickview-modal-content .quickview-info .quickview-detail-info {
         -webkit-scrollbar-width: thin;
         scrollbar-width: thin;
     }
+
     .quickview-modal .quickview-modal-content .quickview-info .quickview-detail-info::-webkit-scrollbar {
         width: 2px;
     }
+
     .quickview-modal .quickview-modal-content .quickview-info .quickview-detail-info::-webkit-scrollbar-track {
         background-color: #eeeeee;
     }
+
     .quickview-modal .quickview-modal-content .quickview-info .quickview-detail-info::-webkit-scrollbar-thumb {
         background-color: #c1c1c1;
     }
+
     .quickview-modal .quickview-modal-content .quickview-info .quickview-detail-info::-webkit-scrollbar-thumb:hover {
         background-color: var(--dominant-font-color);
     }
 }
+
 @media screen and (max-height: 600px) {
+
     .mobile-menu,
     .cart-drawer {
         -webkit-scrollbar-width: thin;
         scrollbar-width: thin;
     }
+
     .mobile-menu::-webkit-scrollbar,
     .cart-drawer::-webkit-scrollbar {
         width: 2px;
     }
+
     .mobile-menu::-webkit-scrollbar-track,
     .cart-drawer::-webkit-scrollbar-track {
         background-color: #eeeeee;
     }
+
     .mobile-menu::-webkit-scrollbar-thumb,
     .cart-drawer::-webkit-scrollbar-thumb {
         background-color: #c1c1c1;
     }
+
     .mobile-menu::-webkit-scrollbar-thumb:hover,
     .cart-drawer::-webkit-scrollbar-thumb:hover {
         background-color: var(--dominant-font-color);
     }
 }
+
 /************************************* scrollbar css end *************************************/
 
 /************************************* keyframes css start *************************************/
@@ -2253,16 +2614,21 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
     0% {
         -webkit-transform: scaleX(0);
         transform: scaleX(0);
-    } 100% {
+    }
+
+    100% {
         -webkit-transform: scaleX(1);
         transform: scaleX(1);
     }
 }
+
 @keyframes loaderProgress {
     0% {
         -webkit-transform: scaleX(0);
         transform: scaleX(0);
-    } 100% {
+    }
+
+    100% {
         -webkit-transform: scaleX(1);
         transform: scaleX(1);
     }
@@ -2274,14 +2640,19 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
 @-webkit-keyframes loaderText {
     0% {
         width: 0%;
-    } 100% {
+    }
+
+    100% {
         width: 100%;
     }
 }
+
 @keyframes loaderText {
     0% {
         width: 0%;
-    } 100% {
+    }
+
+    100% {
         width: 100%;
     }
 }
@@ -2299,22 +2670,28 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
         animation-fill-mode: both;
     }
 }
+
 @-webkit-keyframes DropDownSlide {
     0% {
         opacity: 0;
         visibility: hidden;
-    } 100% {
+    }
+
+    100% {
         opacity: 1;
         visibility: visible;
     }
 }
+
 @keyframes DropDownSlide {
     0% {
         opacity: 0;
         visibility: hidden;
         -webkit-transform: translateY(10px);
         transform: translateY(10px);
-    } 100% {
+    }
+
+    100% {
         opacity: 1;
         visibility: visible;
         -webkit-transform: translateY(0);
@@ -2325,23 +2702,28 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
 /*====================================
     hoverEffect keyframes css
 ====================================*/
-@-webkit-keyframes hoverEffect { 
+@-webkit-keyframes hoverEffect {
     0% {
         opacity: 1;
         -webkit-transform: scale(0.1);
         transform: scale(0.1)
-    } 100% {
+    }
+
+    100% {
         opacity: 0;
         -webkit-transform: scale(1.1);
         transform: scale(1.1)
     }
 }
+
 @keyframes hoverEffect {
     0% {
         opacity: 1;
         -webkit-transform: scale(0.5);
         transform: scale(0.5)
-    } 100% {
+    }
+
+    100% {
         opacity: 0;
         -webkit-transform: scale(1.1);
         transform: scale(1.1)
@@ -2354,14 +2736,19 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
 @-webkit-keyframes rotator {
     0% {
         transform: rotate(0deg);
-    } 100% {
+    }
+
+    100% {
         transform: rotate(270deg);
     }
 }
+
 @keyframes rotator {
     0% {
         transform: rotate(0deg);
-    } 100% {
+    }
+
+    100% {
         transform: rotate(270deg);
     }
 }
@@ -2372,21 +2759,30 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
 @-webkit-keyframes dash {
     0% {
         stroke-dashoffset: 280;
-    } 50% {
+    }
+
+    50% {
         stroke-dashoffset: 75;
         transform: rotate(135deg);
-    } 100% {
+    }
+
+    100% {
         stroke-dashoffset: 280;
         transform: rotate(450deg);
     }
 }
+
 @keyframes dash {
     0% {
         stroke-dashoffset: 280;
-    } 50% {
+    }
+
+    50% {
         stroke-dashoffset: 75;
         transform: rotate(135deg);
-    } 100% {
+    }
+
+    100% {
         stroke-dashoffset: 280;
         transform: rotate(450deg);
     }
@@ -2399,24 +2795,31 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
     -webkit-animation: spin 4s linear infinite;
     animation: spin 4s linear infinite;
 }
+
 @-webkit-keyframes spin {
     0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
-    } 100% {
+    }
+
+    100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 }
+
 @keyframes spin {
     0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
-    } 100% {
+    }
+
+    100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 }
+
 /************************************* keyframes css end *************************************/
 
 /************************************* animation css start *************************************/
@@ -2426,7 +2829,9 @@ label.cust-switch-label input:checked ~ span.cust-switch-slide::before {
 [data-animate] {
     opacity: 0
 }
+
 [data-animate].animate__animated {
     opacity: 1
 }
+
 /************************************* animation css end *************************************/
